@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, request, jsonify
 import requests
 from flask_cors import CORS
 
@@ -10,7 +10,7 @@ API_KEY = "cfdeaf310b0c41104bf5ebca007ee5abc6ec8dd6bcb97c88f33b7c45efb8c598"  # 
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return "API is running"  # Simple text, no template needed
 
 @app.route("/scan", methods=["POST"])
 def scan_url():
