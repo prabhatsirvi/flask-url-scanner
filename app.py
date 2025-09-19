@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-API_KEY = "cfdeaf310b0c41104bf5ebca007ee5abc6ec8dd6bcb97c88f33b7c45efb8c598"  # ← Your API key here
+API_KEY = "cfdeaf310b0c41104bf5ebca007ee5abc6ec8dd6bcb97c88f33b7c45efb8c598"  # ← Demo Api
 
 @app.route("/")
 def home():
@@ -50,3 +50,4 @@ def scan_url():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
